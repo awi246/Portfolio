@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.62a9694b.css",
+    "main.js": "/static/js/main.30653e80.js",
+    "static/media/img4.png": "/static/media/img4.ff83fca40603c965cb66.png",
+    "static/media/img1.png": "/static/media/img1.c32874a853a449903bbb.png",
+    "static/media/img8.png": "/static/media/img8.21b690ce5c5024bf0edd.png",
+    "static/media/img7.png": "/static/media/img7.8a7d88b5a94c0503807c.png",
+    "static/media/img5.png": "/static/media/img5.f29d75e6a94d0a627305.png",
+    "static/media/img10.png": "/static/media/img10.e295d125d9ea2872f2b6.png",
+    "static/media/img2.png": "/static/media/img2.1d417e5a6e95e7d4f784.png",
+    "static/media/img3.png": "/static/media/img3.8cc1caa7049a2ef80ab2.png",
+    "static/media/profilephoto.png": "/static/media/profilephoto.2c0a2e52782ec7914c43.png",
+    "static/media/img9.png": "/static/media/img9.885809fbe00e37ca1cbe.png",
+    "static/media/me.jpg": "/static/media/me.f439a5ade4a447718449.jpg",
+    "static/media/img6.png": "/static/media/img6.7f2a2ff08a17447df9f2.png",
+    "static/media/AwiralCV.pdf": "/static/media/AwiralCV.8aa81d63b9754fac5de5.pdf",
+    "static/media/profilephoto 1.24.56 AM.jpg": "/static/media/profilephoto 1.24.56 AM.8b1c4d355323e4dea621.jpg",
+    "index.html": "/index.html",
+    "main.62a9694b.css.map": "/static/css/main.62a9694b.css.map",
+    "main.30653e80.js.map": "/static/js/main.30653e80.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62a9694b.css",
+    "static/js/main.30653e80.js"
+  ]
+}
