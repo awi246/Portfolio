@@ -17,16 +17,16 @@ const About = () => {
         </div>
         <div className="about__content">
           <div className="about__cards">
-            <a href="#education">
-              <article className="about__card">
-                <IoMdSchool className="About__icon" />
-                <h5>Education</h5>
-              </article>
-            </a>
             <a href="#experience">
               <article className="about__card">
                 <BsCodeSlash className="About__icon" />
                 <h5>Coding Skills</h5>
+              </article>
+            </a>
+            <a href="#education">
+              <article className="about__card">
+                <IoMdSchool className="About__icon" />
+                <h5>Education</h5>
               </article>
             </a>
             <a href="#portfolio">
@@ -37,10 +37,11 @@ const About = () => {
             </a>
           </div>
           <p>
-            I am a fresher who values qualitative user research and this is
+            {/* I am a fresher who values qualitative user research and this is
             something where i feel like i can bring a lot to team. Frontend
             developer with background knowledge along with a knack of building
-            applications with utmost effciency.
+            applications with utmost effciency. */}
+            I am a fresher who values qualitative user research and this is something where i feel like i can bring a lot to team. As a frontend developer, I am committed to staying up-to-date with the latest technologies and trends to provide the best possible solutions to clients. I am excited to start my career and contribute to creating meaningful web applications that make a difference in people's lives.
           </p>
 
           <a href="#contact" className="btn btn-primary">
