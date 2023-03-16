@@ -22,7 +22,7 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
             <img src={IMG1} className="portfolio__item-image" alt="" />
           </div>
-            <h3>This is a Portfolio title</h3>
+            <h3>Store Website</h3>
             <div className="portfolio__item-cta">
 
             <a href="https://github.com/awi246/Store" className="btn btn-primary" target="_blank">GitHub</a> 
@@ -32,7 +32,7 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
           <img src={IMG2} className="portfolio__item-image" alt="" />
           </div>
-            <h3>This is a Portfolio title</h3>
+          <h3>Store Website</h3>
             <div className="portfolio__item-cta">
 
             <a href="https://github.com/awi246/Store" className="btn btn-primary" target="_blank">GitHub</a> 
@@ -42,7 +42,7 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
           <img src={IMG3} className="portfolio__item-image" alt="" />
           </div>
-            <h3>This is a Portfolio title</h3>
+          <h3>Store Website</h3>
             <div className="portfolio__item-cta">
 
             <a href="https://github.com/awi246/Store" className="btn btn-primary" target="_blank">GitHub</a> 
@@ -52,7 +52,7 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
           <img src={IMG4} className="portfolio__item-image" alt="" />
           </div>
-            <h3>This is a Portfolio title</h3>
+          <h3>Store Website</h3>
             <div className="portfolio__item-cta">
 
             <a href="https://github.com/awi246/Store" className="btn btn-primary" target="_blank">GitHub</a> 
@@ -63,7 +63,7 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
           <img src={IMG7} className="portfolio__item-image" alt="" />
           </div>
-            <h3>This is a Portfolio title</h3>
+            <h3>This is old Portfolio</h3>
             <div className="portfolio__item-cta">
 
             <a href="https://github.com/awi246/Old-Portfolio" className="btn btn-primary" target="_blank">GitHub</a> 
@@ -73,7 +73,7 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
           <img src={IMG8} className="portfolio__item-image" alt="" />
           </div>
-            <h3>This is a Portfolio title</h3>
+          <h3>This is old Portfolio</h3>
             <div className="portfolio__item-cta">
 
             <a href="https://github.com/awi246/Old-Portfolio" className="btn btn-primary" target="_blank">GitHub</a> 
@@ -83,7 +83,7 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
           <img src={IMG9} className="portfolio__item-image" alt="" />
           </div>
-            <h3>This is a Portfolio title</h3>
+          <h3>This is old Portfolio</h3>
             <div className="portfolio__item-cta">
 
             <a href="https://github.com/awi246/Old-Portfolio" className="btn btn-primary" target="_blank">GitHub</a> 
@@ -93,7 +93,7 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
           <img src={IMG10} className="portfolio__item-image" alt="" />
           </div>
-            <h3>This is a Portfolio title</h3>
+          <h3>This is old Portfolio</h3>
             <div className="portfolio__item-cta">
 
             <a href="https://github.com/awi246/Old-Portfolio" className="btn btn-primary" target="_blank">GitHub</a> 
@@ -103,7 +103,7 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
           <img src={IMG5} className="portfolio__item-image" alt="" />
           </div>
-            <h3>This is a Portfolio title</h3>
+            <h3>This is a Old Cv</h3>
             <div className="portfolio__item-cta">
 
             <a href="https://github.com/awi246/Old-CV" className="btn btn-primary" target="_blank">GitHub</a> 
@@ -113,7 +113,7 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
           <img src={IMG6} className="portfolio__item-image" alt="" />
           </div>
-            <h3>This is a Portfolio title</h3>
+          <h3>This is a Old Cv</h3>
             <div className="portfolio__item-cta">
 
             <a href="https://github.com/awi246/Old-CV" className="btn btn-primary" target="_blank">GitHub</a> 

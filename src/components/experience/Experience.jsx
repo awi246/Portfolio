@@ -14,21 +14,21 @@ const Experience = () => {
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
               <h4>HTML</h4>
-              <small className="text-light">Experienced <br /></small>
+              <small >Experienced <br /></small>
               </div>
             </articel>
             <articel className="experience__details">
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
               <h4>CSS</h4>
-              <small className="text-light">Experienced <br /></small>
+              <small>Experienced <br /></small>
               </div>
             </articel>
             <articel className="experience__details">
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
               <h4>JavaScript</h4>
-              <small className="text-light">Intermediate <br /></small>
+              <small>Intermediate <br /></small>
               </div>
             </articel>
             
@@ -36,7 +36,7 @@ const Experience = () => {
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
               <h4>React</h4>
-              <small className="text-light">Experienced <br /></small>
+              <small>Experienced <br /></small>
               </div>
             </articel>
             
@@ -50,21 +50,21 @@ const Experience = () => {
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
               <h4>Java</h4>
-              <small className="text-light">Intermediate <br /></small>
+              <small>Intermediate <br /></small>
               </div>
             </articel>
             <articel className="experience__details">
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
               <h4>C/C++</h4>
-              <small className="text-light">Experienced <br /></small>
+              <small>Experienced <br /></small>
               </div>
             </articel>
             <articel className="experience__details">
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
               <h4>Git</h4>
-              <small className="text-light">Experienced</small>
+              <small>Experienced</small>
               </div>
             </articel>
           </div>

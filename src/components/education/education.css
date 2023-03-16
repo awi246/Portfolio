@@ -1,0 +1,44 @@
+/* .edu__container{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 2.5rem;
+} */
+#education{
+    padding: 10%;
+}
+.edu__container{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 2rem;
+}
+.edu__container > article{
+    background: var(--color-bg-varient );
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.edu__container > article:hover{
+    background: transparent;
+    background-color: lavender;
+    cursor: default;
+    color: black;
+}
+
+.edu__details-icons{
+    margin-top: 7px;
+    color: var(--color-primary);
+}
+
+@media screen and (max-width:1024px){
+    .edu__container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+ }
+ @media screen and (max-width:600px){
+    .edu__container{
+        width: var(--container-width-ms);
+    }
+ }

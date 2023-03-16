@@ -40,7 +40,9 @@
 }
 
 .about__card{
-    background: var( --color-bg-varient);
+    background: var(--color-primary);
+    color: var(--color-bg);
+
     border: 1px solid transparent;
     border-radius: 1rem ;
     padding: 2rem;
@@ -49,9 +51,10 @@
 }
 
 .about__card:hover{
-    background: transparent;
-    background-color: var(--color-primary-variant);
-    cursor: default;
+    
+    background: var(--color-white);
+    color: black;
+    border-color: transparent;
 }
 
 .about__icon{
@@ -61,6 +64,11 @@
 }
 
 .about__card h5{
+    
+    font-size: 0.96rem;
+}
+.about__card h5:hover{
+    color: black;
     font-size: 0.96rem;
 }
 

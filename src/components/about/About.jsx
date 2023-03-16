@@ -17,19 +17,32 @@ const About = () => {
         </div>
         <div className="about__content">
           <div className="about__cards">
+          <a href="#education">
+
+<article className="about__card">
+  <IoMdSchool className="About__icon" />
+  <h5>Education</h5>
+  
+</article>
+
+</a>
+            <a href="#experience">
+                
             <article className="about__card">
-              <IoMdSchool className="About__icon" />
-              <h5>Education</h5>
-            </article>
-            <article className="about__card">
+             
               <BsCodeSlash className="About__icon" />
               <h5>Coding Skills</h5>
             </article>
-           
+                </a>
+           <a href="#portfolio" >
+
             <article className="about__card">
               <BsAward className="About__icon" />
               <h5>Projects</h5>
+              
             </article>
+           </a>
+           
           </div>
           <p>
             I am a fresher who values qualitative user research and this is
