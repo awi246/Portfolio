@@ -66,6 +66,7 @@
 .about__card h5{
     
     font-size: 0.96rem;
+    max-height: 24px;
 }
 .about__card h5:hover{
     color: black;
