@@ -1,8 +1,11 @@
-import React from 'react'
-import "./header.css"
-import CTA from './CTA'
-import ME from '../../assets/profilephoto.png'
-import HeaderSocials from './HeaderSocials'
+import React from "react";
+import "./header.css";
+// import ME from '../../assets/profilephoto.png'
+import { AiFillGithub } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
+import { AiFillFacebook } from "react-icons/ai";
+import CV from "../../assets/AwiralCV.pdf";
+
 const Header = () => {
   return (
     <header>
@@ -10,16 +13,44 @@ const Header = () => {
         <h5>Hello I'm</h5>
         <h1>Awiral Chand</h1>
         <h5 className="text-light">Frontend Developer</h5>
-        <CTA/>
-        <HeaderSocials/>
+        <div className="cta">
+          <a href={CV} download className="btn">
+            {" "}
+            Download CV
+          </a>
+          <a href="#contact" className="btn btn-primary">
+            Let's Talk
+          </a>
+        </div>
+
+        <div className="header__socials">
+          <a
+            href="https://www.instagram.com/awiral.chand/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <AiFillInstagram />
+          </a>
+          <a href="https://github.com/awi246" target="_blank" rel="noreferrer">
+            <AiFillGithub />
+          </a>
+          <a
+            href="https://www.facebook.com/awiral.chand.9"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <AiFillFacebook />
+          </a>
+        </div>
         <div className="profile-picture">
-                <div className="profile-picture-background">
-                </div>
-            </div>
-        <a href="#contact" className='scroll__down'>Scroll Down</a>
+          <div className="profile-picture-background"></div>
+        </div>
+        <a href="#contact" className="scroll__down">
+          Scroll Down
+        </a>
       </div>
     </header>
-    )
-}
+  );
+};
 
-export default Header
+export default Header;
