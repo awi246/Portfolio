@@ -93,8 +93,10 @@
     
    }
    .about__cards{
-    grid-template-columns: 1fr;
+    /* width: px; */
+    /* grid-template-columns: 1fr; */
     gap: 2rem;
+  
    }
 
 }

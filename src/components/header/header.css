@@ -88,9 +88,14 @@ header{
 @media screen and (max-width:1024px){
     header{
         height: 800px;
+        margin-bottom: 60%;
+        margin-top: 40%;
     }
     .header__socials, .scroll__down{
         display: none;
+    }
+    .header__container{
+        height: ;
     }
     
 
