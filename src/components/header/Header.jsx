@@ -6,6 +6,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { AiFillFacebook } from "react-icons/ai";
 import CV from "../../assets/AwiralCV.pdf";
 
+
 const Header = () => {
   return (
     <header>
@@ -21,6 +22,9 @@ const Header = () => {
           <a href="#contact" className="btn btn-primary">
             Let's Talk
           </a>
+        </div>
+        <div>
+          {/* <img src={ME} alt="" /> */}
         </div>
 
         <div className="header__socials">
