@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import ME from "../../assets/me.jpg";
+import ME from "../../assets/2ndPhoto.png";
 import { IoMdSchool } from "react-icons/io";
 import { BsCodeSlash } from "react-icons/bs";
 import { BsAward } from "react-icons/bs";
