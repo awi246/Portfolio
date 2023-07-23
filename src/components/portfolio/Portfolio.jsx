@@ -11,6 +11,10 @@ import IMG8 from '../../assets/img8.png'
 import IMG9 from '../../assets/img9.png'
 import IMG10 from '../../assets/img10.png'
 import IMG11 from '../../assets/img11.png'
+import IMG12 from '../../assets/img12.png'
+import IMG13 from '../../assets/img13.png'
+import IMG14 from '../../assets/img14.png'
+
 
 const Portfolio = () => {
   return (
@@ -19,6 +23,37 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
+      <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG12} className="portfolio__item-image" alt="" />
+          </div>
+            <h3>Box Office Website</h3>
+            <div className="portfolio__item-cta">
+
+            <a href="https://github.com/awi246/Box-Office" className="btn btn-primary" target="_blank">GitHub</a> 
+            </div>
+        </article>
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG13} className="portfolio__item-image" alt="" />
+          </div>
+            <h3>Box Office Website</h3>
+            <div className="portfolio__item-cta">
+
+            <a href="https://github.com/awi246/Box-Office" className="btn btn-primary" target="_blank">GitHub</a> 
+            </div>
+        </article>
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG14} className="portfolio__item-image" alt="" />
+          </div>
+            <h3>Box Office Website</h3>
+            <div className="portfolio__item-cta">
+
+            <a href="https://github.com/awi246/Box-Office" className="btn btn-primary" target="_blank">GitHub</a> 
+            </div>
+        </article>
+        
       <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG11} className="portfolio__item-image" alt="" />
