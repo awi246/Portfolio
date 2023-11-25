@@ -14,6 +14,7 @@ import IMG11 from '../../assets/img11.png'
 import IMG12 from '../../assets/img12.png'
 import IMG13 from '../../assets/img13.png'
 import IMG14 from '../../assets/img14.png'
+import IMG15 from '../../assets/img15.png'
 
 
 const Portfolio = () => {
@@ -29,28 +30,29 @@ const Portfolio = () => {
           </div>
             <h3>Box Office Website</h3>
             <div className="portfolio__item-cta">
-
-            <a href="https://github.com/awi246/Box-Office" className="btn btn-primary" target="_blank">GitHub</a> 
+          
+            <a href="https://github.com/awi246/Box-Office" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
             </div>
         </article>
         <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG13} className="portfolio__item-image" alt="" />
           </div>
-            <h3>Box Office Website</h3>
+            <h3>Box Office Website</h3>  
             <div className="portfolio__item-cta">
 
-            <a href="https://github.com/awi246/Box-Office" className="btn btn-primary" target="_blank">GitHub</a> 
+            <a href="https://github.com/awi246/Box-Office" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
             </div>
         </article>
         <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG14} className="portfolio__item-image" alt="" />
-          </div>
+          </div> 
+          
             <h3>Box Office Website</h3>
             <div className="portfolio__item-cta">
 
-            <a href="https://github.com/awi246/Box-Office" className="btn btn-primary" target="_blank">GitHub</a> 
+            <a href="https://github.com/awi246/Box-Office" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
             </div>
         </article>
         
@@ -61,7 +63,17 @@ const Portfolio = () => {
             <h3>TicTacToe</h3>
             <div className="portfolio__item-cta">
 
-            <a href="https://github.com/awi246/TicTacToe" className="btn btn-primary" target="_blank">GitHub</a> 
+            <a href="https://github.com/awi246/TicTacToe" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
+            </div>
+        </article>
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG15} className="portfolio__item-image" alt="" />
+          </div>
+            <h3>Weather App</h3>
+            <div className="portfolio__item-cta">
+
+            <a href="https://github.com/awi246/Weather-using-Api" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
             </div>
         </article>
         <article className="portfolio__item">
@@ -71,9 +83,10 @@ const Portfolio = () => {
             <h3>Store Website</h3>
             <div className="portfolio__item-cta">
 
-            <a href="https://github.com/awi246/Store" className="btn btn-primary" target="_blank">GitHub</a> 
+            <a href="https://github.com/awi246/Store" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
             </div>
         </article>
+       
         <article className="portfolio__item">
           <div className="portfolio__item-image">
           <img src={IMG2} className="portfolio__item-image" alt="" />
@@ -81,7 +94,7 @@ const Portfolio = () => {
           <h3>Store Website</h3>
             <div className="portfolio__item-cta">
 
-            <a href="https://github.com/awi246/Store" className="btn btn-primary" target="_blank">GitHub</a> 
+            <a href="https://github.com/awi246/Store" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
             </div>
         </article>
         <article className="portfolio__item">
@@ -91,7 +104,7 @@ const Portfolio = () => {
           <h3>Store Website</h3>
             <div className="portfolio__item-cta">
 
-            <a href="https://github.com/awi246/Store" className="btn btn-primary" target="_blank">GitHub</a> 
+            <a href="https://github.com/awi246/Store" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
             </div>
         </article>
         <article className="portfolio__item">
@@ -101,7 +114,7 @@ const Portfolio = () => {
           <h3>Store Website</h3>
             <div className="portfolio__item-cta">
 
-            <a href="https://github.com/awi246/Store" className="btn btn-primary" target="_blank">GitHub</a> 
+            <a href="https://github.com/awi246/Store" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
             
             </div>
         </article>
@@ -112,7 +125,7 @@ const Portfolio = () => {
             <h3>This is old Portfolio</h3>
             <div className="portfolio__item-cta">
 
-            <a href="https://github.com/awi246/Old-Portfolio" className="btn btn-primary" target="_blank">GitHub</a> 
+            <a href="https://github.com/awi246/Old-Portfolio" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
             </div>
         </article>
         <article className="portfolio__item">
@@ -122,7 +135,7 @@ const Portfolio = () => {
           <h3>This is old Portfolio</h3>
             <div className="portfolio__item-cta">
 
-            <a href="https://github.com/awi246/Old-Portfolio" className="btn btn-primary" target="_blank">GitHub</a> 
+            <a href="https://github.com/awi246/Old-Portfolio" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
             </div>
         </article>
         <article className="portfolio__item">
@@ -132,7 +145,7 @@ const Portfolio = () => {
           <h3>This is old Portfolio</h3>
             <div className="portfolio__item-cta">
 
-            <a href="https://github.com/awi246/Old-Portfolio" className="btn btn-primary" target="_blank">GitHub</a> 
+            <a href="https://github.com/awi246/Old-Portfolio" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
             </div>
         </article>
         <article className="portfolio__item">
@@ -142,7 +155,7 @@ const Portfolio = () => {
           <h3>This is old Portfolio</h3>
             <div className="portfolio__item-cta">
 
-            <a href="https://github.com/awi246/Old-Portfolio" className="btn btn-primary" target="_blank">GitHub</a> 
+            <a href="https://github.com/awi246/Old-Portfolio" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
             </div>
         </article>
         <article className="portfolio__item">
@@ -152,7 +165,7 @@ const Portfolio = () => {
             <h3>This is a Old Cv</h3>
             <div className="portfolio__item-cta">
 
-            <a href="https://github.com/awi246/Old-CV" className="btn btn-primary" target="_blank">GitHub</a> 
+            <a href="https://github.com/awi246/Old-CV" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
             </div>
         </article>
         <article className="portfolio__item">
@@ -162,7 +175,7 @@ const Portfolio = () => {
           <h3>This is a Old Cv</h3>
             <div className="portfolio__item-cta">
 
-            <a href="https://github.com/awi246/Old-CV" className="btn btn-primary" target="_blank">GitHub</a> 
+            <a href="https://github.com/awi246/Old-CV" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
             </div>
         </article>
         
