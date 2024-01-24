@@ -4,7 +4,7 @@ import "./header.css";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
 import { AiFillFacebook } from "react-icons/ai";
-import CV from "../../assets/AwiralCV.pdf";
+import CV from "../../assets/AwiralChandCV.pdf";
 
 
 const Header = () => {
@@ -15,7 +15,7 @@ const Header = () => {
         <h1>Awiral Chand</h1>
         <h5 className="text-light">Frontend Developer</h5>
         <div className="cta">
-          <a href={CV} download className="btn">
+          <a href={CV} download="Awiral Resume" className="btn">
             {" "}
             Download CV
           </a>
