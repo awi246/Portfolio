@@ -24,35 +24,16 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-      <article className="portfolio__item">
+     
+        <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG12} className="portfolio__item-image" alt="" />
-          </div>
-            <h3>Box Office Website</h3>
-            <div className="portfolio__item-cta">
-          
-            <a href="https://github.com/awi246/Box-Office" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
-            </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={IMG13} className="portfolio__item-image" alt="" />
-          </div>
-            <h3>Box Office Website</h3>  
-            <div className="portfolio__item-cta">
-
-            <a href="https://github.com/awi246/Box-Office" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
-            </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={IMG14} className="portfolio__item-image" alt="" />
           </div> 
           
             <h3>Box Office Website</h3>
             <div className="portfolio__item-cta">
 
-            <a href="https://github.com/awi246/Box-Office" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
+            <a href="https://master--meek-pothos-d119ec.netlify.app/" className="btn btn-primary" target="_blank" rel="noreferrer">Live Demo</a> 
             </div>
         </article>
         
@@ -63,7 +44,7 @@ const Portfolio = () => {
             <h3>TicTacToe</h3>
             <div className="portfolio__item-cta">
 
-            <a href="https://github.com/awi246/TicTacToe" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
+            <a href="https://main--tictactoeawiral.netlify.app/" className="btn btn-primary" target="_blank" rel="noreferrer">Live Demo</a> 
             </div>
         </article>
         <article className="portfolio__item">
@@ -73,7 +54,7 @@ const Portfolio = () => {
             <h3>Weather App</h3>
             <div className="portfolio__item-cta">
 
-            <a href="https://github.com/awi246/Weather-using-Api" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
+            <a href="https://wetherawiral.netlify.app/" className="btn btn-primary" target="_blank" rel="noreferrer">Live Demo</a> 
             </div>
         </article>
         <article className="portfolio__item">
