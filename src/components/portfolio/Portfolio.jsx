@@ -1,167 +1,241 @@
-import React from 'react'
-import "./portfolio.css"
-import IMG1 from '../../assets/img1.png'
-import IMG2 from '../../assets/img2.png'
-import IMG3 from '../../assets/img3.png'
-import IMG4 from '../../assets/img4.png'
-import IMG5 from '../../assets/img5.png'
-import IMG6 from '../../assets/img6.png'
-import IMG7 from '../../assets/img7.png'
-import IMG8 from '../../assets/img8.png'
-import IMG9 from '../../assets/img9.png'
-import IMG10 from '../../assets/img10.png'
-import IMG11 from '../../assets/img11.png'
-import IMG12 from '../../assets/img12.png'
-import IMG13 from '../../assets/img13.png'
-import IMG14 from '../../assets/img14.png'
-import IMG15 from '../../assets/img15.png'
-
+import React from "react";
+import "./portfolio.css";
+import IMG1 from "../../assets/img1.png";
+import IMG2 from "../../assets/img2.png";
+import IMG3 from "../../assets/img3.png";
+import IMG4 from "../../assets/img4.png";
+import IMG5 from "../../assets/img5.png";
+import IMG6 from "../../assets/img6.png";
+import IMG7 from "../../assets/img7.png";
+import IMG8 from "../../assets/img8.png";
+import IMG9 from "../../assets/img9.png";
+import IMG10 from "../../assets/img10.png";
+import IMG11 from "../../assets/img11.png";
+import IMG12 from "../../assets/img12.png";
+import IMG13 from "../../assets/img13.png";
+import IMG14 from "../../assets/img14.png";
+import IMG15 from "../../assets/img15.png";
 
 const Portfolio = () => {
   return (
-    <section id='portfolio'>
+    <section id="portfolio">
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-     
         <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG12} className="portfolio__item-image" alt="" />
-          </div> 
-          
-            <h3>Box Office Website</h3>
-            <div className="portfolio__item-cta">
+          </div>
 
-            <a href="https://master--meek-pothos-d119ec.netlify.app/" className="btn btn-primary" target="_blank" rel="noreferrer">Live Demo</a> 
-            </div>
+          <h3>Box Office Website</h3>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://master--meek-pothos-d119ec.netlify.app/"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Demo
+            </a>
+          </div>
         </article>
-        
-      <article className="portfolio__item">
+
+        <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG11} className="portfolio__item-image" alt="" />
           </div>
-            <h3>TicTacToe</h3>
-            <div className="portfolio__item-cta">
-
-            <a href="https://main--tictactoeawiral.netlify.app/" className="btn btn-primary" target="_blank" rel="noreferrer">Live Demo</a> 
-            </div>
+          <h3>TicTacToe</h3>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://main--tictactoeawiral.netlify.app/"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Demo
+            </a>
+          </div>
         </article>
         <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG15} className="portfolio__item-image" alt="" />
           </div>
-            <h3>Weather App</h3>
-            <div className="portfolio__item-cta">
-
-            <a href="https://wetherawiral.netlify.app/" className="btn btn-primary" target="_blank" rel="noreferrer">Live Demo</a> 
-            </div>
+          <h3>Weather App</h3>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://wetherawiral.netlify.app/"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Demo
+            </a>
+          </div>
         </article>
         <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG1} className="portfolio__item-image" alt="" />
           </div>
-            <h3>Store Website</h3>
-            <div className="portfolio__item-cta">
-
-            <a href="https://github.com/awi246/Store" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
-            </div>
+          <h3>Store Website</h3>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://github.com/awi246/Store"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
         </article>
-       
+
         <article className="portfolio__item">
           <div className="portfolio__item-image">
-          <img src={IMG2} className="portfolio__item-image" alt="" />
+            <img src={IMG2} className="portfolio__item-image" alt="" />
           </div>
           <h3>Store Website</h3>
-            <div className="portfolio__item-cta">
-
-            <a href="https://github.com/awi246/Store" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
-            </div>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://github.com/awi246/Store"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
         </article>
         <article className="portfolio__item">
           <div className="portfolio__item-image">
-          <img src={IMG3} className="portfolio__item-image" alt="" />
+            <img src={IMG3} className="portfolio__item-image" alt="" />
           </div>
           <h3>Store Website</h3>
-            <div className="portfolio__item-cta">
-
-            <a href="https://github.com/awi246/Store" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
-            </div>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://github.com/awi246/Store"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
         </article>
         <article className="portfolio__item">
           <div className="portfolio__item-image">
-          <img src={IMG4} className="portfolio__item-image" alt="" />
+            <img src={IMG4} className="portfolio__item-image" alt="" />
           </div>
           <h3>Store Website</h3>
-            <div className="portfolio__item-cta">
-
-            <a href="https://github.com/awi246/Store" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
-            
-            </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-          <img src={IMG7} className="portfolio__item-image" alt="" />
+          <div className="portfolio__item-cta">
+            <a
+              href="https://github.com/awi246/Store"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
           </div>
-            <h3>This is old Portfolio</h3>
-            <div className="portfolio__item-cta">
-
-            <a href="https://github.com/awi246/Old-Portfolio" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
-            </div>
         </article>
         <article className="portfolio__item">
           <div className="portfolio__item-image">
-          <img src={IMG8} className="portfolio__item-image" alt="" />
+            <img src={IMG7} className="portfolio__item-image" alt="" />
           </div>
           <h3>This is old Portfolio</h3>
-            <div className="portfolio__item-cta">
-
-            <a href="https://github.com/awi246/Old-Portfolio" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
-            </div>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://github.com/awi246/Old-Portfolio"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
         </article>
         <article className="portfolio__item">
           <div className="portfolio__item-image">
-          <img src={IMG9} className="portfolio__item-image" alt="" />
+            <img src={IMG8} className="portfolio__item-image" alt="" />
           </div>
           <h3>This is old Portfolio</h3>
-            <div className="portfolio__item-cta">
-
-            <a href="https://github.com/awi246/Old-Portfolio" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
-            </div>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://github.com/awi246/Old-Portfolio"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
         </article>
         <article className="portfolio__item">
           <div className="portfolio__item-image">
-          <img src={IMG10} className="portfolio__item-image" alt="" />
+            <img src={IMG9} className="portfolio__item-image" alt="" />
           </div>
           <h3>This is old Portfolio</h3>
-            <div className="portfolio__item-cta">
-
-            <a href="https://github.com/awi246/Old-Portfolio" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
-            </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-          <img src={IMG5} className="portfolio__item-image" alt="" />
+          <div className="portfolio__item-cta">
+            <a
+              href="https://github.com/awi246/Old-Portfolio"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
           </div>
-            <h3>This is a Old Cv</h3>
-            <div className="portfolio__item-cta">
-
-            <a href="https://github.com/awi246/Old-CV" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
-            </div>
         </article>
         <article className="portfolio__item">
           <div className="portfolio__item-image">
-          <img src={IMG6} className="portfolio__item-image" alt="" />
+            <img src={IMG10} className="portfolio__item-image" alt="" />
+          </div>
+          <h3>This is old Portfolio</h3>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://github.com/awi246/Old-Portfolio"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
+        </article>
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG5} className="portfolio__item-image" alt="" />
           </div>
           <h3>This is a Old Cv</h3>
-            <div className="portfolio__item-cta">
-
-            <a href="https://github.com/awi246/Old-CV" className="btn btn-primary" target="_blank" rel="noreferrer">GitHub</a> 
-            </div>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://github.com/awi246/Old-CV"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
         </article>
-        
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG6} className="portfolio__item-image" alt="" />
+          </div>
+          <h3>This is a Old Cv</h3>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://github.com/awi246/Old-CV"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
+        </article>
       </div>
     </section>
-  )
-}
-export default Portfolio
+  );
+};
+export default Portfolio;
