@@ -12,9 +12,10 @@ import IMG9 from "../../assets/img9.png";
 import IMG10 from "../../assets/img10.png";
 import IMG11 from "../../assets/img11.png";
 import IMG12 from "../../assets/img12.png";
-import IMG13 from "../../assets/img13.png";
-import IMG14 from "../../assets/img14.png";
+// import IMG13 from "../../assets/img13.png";
+// import IMG14 from "../../assets/img14.png";
 import IMG15 from "../../assets/img15.png";
+import IMG16 from "../../assets/img16.png";
 
 const Portfolio = () => {
   return (
@@ -49,6 +50,22 @@ const Portfolio = () => {
           <div className="portfolio__item-cta">
             <a
               href="https://main--tictactoeawiral.netlify.app/"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG16} className="portfolio__item-image" alt="" />
+          </div>
+          <h3>Calculator</h3>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://calculator-tau-vert.vercel.app/"
               className="btn btn-primary"
               target="_blank"
               rel="noreferrer"
