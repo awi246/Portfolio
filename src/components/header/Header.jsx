@@ -1,7 +1,7 @@
 import React from "react";
 import "./header.css";
 // import ME from '../../assets/profilephoto.png'
-import { AiFillGithub } from "react-icons/ai";
+import { FaLinkedin } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { AiFillFacebook } from "react-icons/ai";
 import CV from "../../assets/Awiral_Frontend.pdf";
@@ -28,6 +28,9 @@ const Header = () => {
         </div>
 
         <div className="header__socials">
+        <a href="https://www.linkedin.com/in/awiral-chand-29b957269/" target="_blank" rel="noreferrer">
+          <FaLinkedin />
+          </a>
           <a
             href="https://www.instagram.com/awiral.chand/"
             target="_blank"
@@ -35,9 +38,7 @@ const Header = () => {
           >
             <AiFillInstagram />
           </a>
-          <a href="https://github.com/awi246" target="_blank" rel="noreferrer">
-            <AiFillGithub />
-          </a>
+         
           <a
             href="https://www.facebook.com/awiral.chand.9"
             target="_blank"
