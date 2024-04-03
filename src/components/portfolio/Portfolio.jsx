@@ -12,7 +12,6 @@ import IMG9 from "../../assets/img9.png";
 import IMG10 from "../../assets/img10.png";
 import IMG11 from "../../assets/img11.png";
 import IMG12 from "../../assets/img12.png";
-// import IMG13 from "../../assets/img13.png";
 import IMG17 from "../../assets/img17.png";
 import IMG15 from "../../assets/img15.png";
 import IMG16 from "../../assets/img16.png";
