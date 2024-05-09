@@ -16,6 +16,8 @@ import IMG17 from "../../assets/img17.png";
 import IMG15 from "../../assets/img15.png";
 import IMG16 from "../../assets/img16.png";
 import IMG18 from "../../assets/img18.png";
+import IMG20 from "../../assets/IMG20.png";
+
 
 const Portfolio = () => {
   return (
@@ -41,6 +43,7 @@ const Portfolio = () => {
             </a>
           </div>
         </article>
+        
         <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG18} className="portfolio__item-image" alt="" />
@@ -52,7 +55,24 @@ const Portfolio = () => {
             </a>
           </div>
         </article>
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG20} className="portfolio__item-image" alt="" />
+          </div>
 
+          <h3>Nike Website</h3>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://tailwind-demo-gold.vercel.app/"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+        
         <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG11} className="portfolio__item-image" alt="" />
