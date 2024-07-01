@@ -4,7 +4,7 @@ import "./header.css";
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { AiFillFacebook } from "react-icons/ai";
-import CV from "../../assets/Awiral_Frontend.pdf";
+import CV from "../../assets/AwiralChandCV.pdf";
 
 
 const Header = () => {
