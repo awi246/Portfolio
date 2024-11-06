@@ -5,6 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { AiFillFacebook } from "react-icons/ai";
 import CV from "../../assets/AwiralChandCV.pdf";
+import meImage from '../../assets/2ndPhoto.png';
 
 
 const Header = () => {
@@ -48,8 +49,11 @@ const Header = () => {
           </a>
         </div>
         <div className="profile-picture">
-          <div className="profile-picture-background"></div>
-        </div>
+  <div className="profile-picture-background">
+    <img src={meImage} alt="Profile" />
+  </div>
+</div>
+
         <a href="#contact" className="scroll__down">
           Scroll Down
         </a>

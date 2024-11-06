@@ -59,16 +59,22 @@ header{
     margin-top: 2rem;
 }
 
-.profile-picture-background{
+.profile-picture-background {
     height: 92%;
     width: 92%;
-    background-image: url('../../assets/me.jpg');
-    background-size: cover;
+    margin-top: ;
     border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-picture-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
 
 .profile-picture-background:hover {
     transform: scale(1.07);
