@@ -10,6 +10,46 @@ const Experience = () => {
         <div className="experience__frontend">
           <h3>Frontend Development </h3>
           <div className="experience__content">
+                        
+          <articel className="experience__details">
+              <BsPatchCheckFill className="experience__details-icons" />
+              <div>
+              <h4>ReactJS</h4>
+              <small>Experienced <br /></small>
+              </div>
+            </articel>
+                        
+            <articel className="experience__details">
+              <BsPatchCheckFill className="experience__details-icons" />
+              <div>
+              <h4>InertiaJS</h4>
+              <small>Experienced <br /></small>
+              </div>
+            </articel>
+                        
+            <articel className="experience__details">
+              <BsPatchCheckFill className="experience__details-icons" />
+              <div>
+              <h4>NextJS</h4>
+              <small>Experienced <br /></small>
+              </div>
+            </articel>
+                        
+            <articel className="experience__details">
+              <BsPatchCheckFill className="experience__details-icons" />
+              <div>
+              <h4>Redux</h4>
+              <small>Experienced <br /></small>
+              </div>
+            </articel>
+                        
+            <articel className="experience__details">
+              <BsPatchCheckFill className="experience__details-icons" />
+              <div>
+              <h4>Tailwind CSS</h4>
+              <small>Experienced <br /></small>
+              </div>
+            </articel>
             <articel className="experience__details">
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
@@ -28,18 +68,9 @@ const Experience = () => {
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
               <h4>JavaScript</h4>
-              <small>Intermediate <br /></small>
-              </div>
-            </articel>
-            
-            <articel className="experience__details">
-              <BsPatchCheckFill className="experience__details-icons" />
-              <div>
-              <h4>React</h4>
               <small>Experienced <br /></small>
               </div>
-            </articel>
-            
+            </articel>         
           </div>
           
         </div>
