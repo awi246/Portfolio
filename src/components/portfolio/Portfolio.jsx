@@ -17,7 +17,9 @@ import IMG15 from "../../assets/img15.png";
 import IMG16 from "../../assets/img16.png";
 import IMG18 from "../../assets/img18.png";
 import IMG20 from "../../assets/IMG20.png";
-
+import IMG21 from "../../assets/img21.png";
+import IMG22 from "../../assets/img22.png"
+import IMG23 from "../../assets/img23.png";
 
 const Portfolio = () => {
   return (
@@ -97,6 +99,54 @@ const Portfolio = () => {
           <div className="portfolio__item-cta">
             <a
               href="https://calculator-tau-vert.vercel.app/"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG21} className="portfolio__item-image" alt="" />
+          </div>
+          <h3>Travel App</h3>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://teavel-list-ro8x.vercel.app/"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG22} className="portfolio__item-image" alt="" />
+          </div>
+          <h3>Pizza Menu</h3>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://pizza-menu-sable.vercel.app/"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG23} className="portfolio__item-image" alt="" />
+          </div>
+          <h3>Steps</h3>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://steps-self.vercel.app/"
               className="btn btn-primary"
               target="_blank"
               rel="noreferrer"
