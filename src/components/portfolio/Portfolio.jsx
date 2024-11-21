@@ -20,6 +20,8 @@ import IMG20 from "../../assets/IMG20.png";
 import IMG21 from "../../assets/img21.png";
 import IMG22 from "../../assets/img22.png"
 import IMG23 from "../../assets/img23.png";
+import IMG24 from "../../assets/img24.png";
+import IMG25 from "../../assets/img25.png";
 
 const Portfolio = () => {
   return (
@@ -74,7 +76,7 @@ const Portfolio = () => {
             </a>
           </div>
         </article>
-        
+
         <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG11} className="portfolio__item-image" alt="" />
@@ -83,6 +85,39 @@ const Portfolio = () => {
           <div className="portfolio__item-cta">
             <a
               href="https://main--tictactoeawiral.netlify.app/"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+                
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG24} className="portfolio__item-image" alt="" />
+          </div>
+          <h3>Split the Bill</h3>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://split-the-bill-delta.vercel.app/"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG25} className="portfolio__item-image" alt="" />
+          </div>
+          <h3>Movie Picker</h3>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://movie-picker-omega.vercel.app/"
               className="btn btn-primary"
               target="_blank"
               rel="noreferrer"
