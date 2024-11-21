@@ -22,15 +22,37 @@ import IMG22 from "../../assets/img22.png"
 import IMG23 from "../../assets/img23.png";
 import IMG24 from "../../assets/img24.png";
 import IMG25 from "../../assets/img25.png";
+import IMG26 from "../../assets/img26.png";
+import IMG27 from "../../assets/img27.png";
+import IMG28 from "../../assets/img28.png";
 
 const Portfolio = () => {
   return (
     <section id="portfolio">
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
-
       <div className="container portfolio__container">
-        <article className="portfolio__item">
+      <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG26} className="portfolio__item-image" alt="" />
+          </div>
+
+          <h3>Ug web</h3>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://www.ugcakes.com/"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Demo
+            </a>
+            <a href="https://www.ugcakes.com/" className="btn btn-primary" rel="noreferrer" target="_blank">
+            Real World
+            </a>
+          </div>
+        </article>
+      <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG12} className="portfolio__item-image" alt="" />
           </div>
@@ -47,6 +69,25 @@ const Portfolio = () => {
             </a>
           </div>
         </article>
+    
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG27} className="portfolio__item-image" alt="" />
+          </div>
+
+          <h3>Advance E-com</h3>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://advance-e-com.vercel.app/"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+
         
         <article className="portfolio__item">
           <div className="portfolio__item-image">
@@ -85,6 +126,23 @@ const Portfolio = () => {
           <div className="portfolio__item-cta">
             <a
               href="https://main--tictactoeawiral.netlify.app/"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG28} className="portfolio__item-image" alt="" />
+          </div>
+
+          <h3>Company Web</h3>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://office-web-rz9p.vercel.app/"
               className="btn btn-primary"
               target="_blank"
               rel="noreferrer"

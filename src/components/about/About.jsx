@@ -20,7 +20,7 @@ const About = () => {
             <a href="#experience">
               <article className="about__card">
                 <BsCodeSlash className="About__icon" />
-                <h5>Coding Skills</h5>
+                <h5>Coding</h5>
               </article>
             </a>
             <a href="#education">

@@ -11,7 +11,6 @@ const Education = () => {
         <article className="art">
 
         <div className='details'>
-            <IoIosSchool className="edu__details-icons"/>
             <h2 className='name'>Kanchan Vidya Mandir</h2>
             <small className='address'>Mahendranagar, Kanchanpur</small>
             
@@ -19,22 +18,16 @@ const Education = () => {
         </article>
         <article className="art">
         <div className='details'>
-        <IoIosSchool className="edu__details-icons"/>
             <h2 className='name'>Radiant Secondary School</h2>
-            <small className='address'>Mahendranagar, Kanchanpur</small>
-            <h3 className='course'>Science</h3>
+            <small className='address'>(Science)</small>
 
         </div>
         </article>
         <article className="art">
 
         <div className='details'>
-        <IoIosSchool className="edu__details-icons"/>
             <h2 className='name'>Texas international college</h2>
-            <small className='address'>Mitrapark, Kathmandu</small>
-            <h3 className='course'>Bsc CSIT</h3>
-            <small>On Going</small>
-
+            <small className='address'>(Bsc CSIT)</small>
         </div>
         </article>
       </div>
