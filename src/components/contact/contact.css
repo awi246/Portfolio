@@ -132,6 +132,11 @@ form {
   gap: 1.2rem;
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
 input,
 textarea {
   width: 100%;
@@ -144,6 +149,32 @@ textarea {
   font-family: inherit;
   transition: var(--transition);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  font-size: 0.95rem;
+}
+
+input.error,
+textarea.error {
+  border-color: #ff4757;
+  animation: shake 0.3s ease;
+}
+
+input.error::placeholder,
+textarea.error::placeholder {
+  color: #ff4757;
+  font-size: 0.9rem;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
 }
 
 input:focus,
@@ -154,9 +185,15 @@ textarea:focus {
   box-shadow: 0 5px 20px rgba(77, 181, 255, 0.2);
 }
 
+input.error:focus,
+textarea.error:focus {
+  border-color: #ff6b7a;
+}
+
 input::placeholder,
 textarea::placeholder {
   color: var(--color-light);
+  font-size: 0.95rem;
 }
 
 .send-btn {
@@ -282,5 +319,20 @@ textarea::placeholder {
   .send-btn {
     padding: 0.8em 1.2em;
     font-size: 1rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 0.85rem;
+  }
+
+  input.error::placeholder,
+  textarea.error::placeholder {
+    font-size: 0.8rem;
   }
 }

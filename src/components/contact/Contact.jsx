@@ -11,9 +11,61 @@ import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
   const form = useRef();
   const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const validateField = (name, value) => {
+    let error = "";
+
+    switch (name) {
+      case "name":
+        if (!value || value.trim() === "") {
+          error = "Please enter your full name";
+        }
+        break;
+      case "email":
+        if (!value || value.trim() === "") {
+          error = "Please enter your email address";
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+          error = "Please include '@' in the email address";
+        }
+        break;
+      case "message":
+        if (!value || value.trim() === "") {
+          error = "Please enter your message";
+        }
+        break;
+      default:
+        break;
+    }
+
+    setErrors((prev) => ({ ...prev, [name]: error }));
+    return error === "";
+  };
+
+  const validateForm = () => {
+    const formData = new FormData(form.current);
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const message = formData.get("message");
+
+    const nameValid = validateField("name", name);
+    const emailValid = validateField("email", email);
+    const messageValid = validateField("message", message);
+
+    return nameValid && emailValid && messageValid;
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    if (!validateForm()) {
+      return;
+    }
+
     setLoading(true);
 
     emailjs
@@ -38,6 +90,7 @@ const Contact = () => {
             }
           );
           e.target.reset();
+          setErrors({ name: "", email: "", message: "" });
           setLoading(false);
         },
         (error) => {
@@ -49,6 +102,18 @@ const Contact = () => {
           setLoading(false);
         }
       );
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    if (errors[name]) {
+      validateField(name, value);
+    }
+  };
+
+  const handleBlur = (e) => {
+    const { name, value } = e.target;
+    validateField(name, value);
   };
 
   return (
@@ -107,26 +172,41 @@ const Contact = () => {
             </a>
           </article>
         </div>
-        <form ref={form} onSubmit={sendEmail}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Full Name"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email Address"
-            required
-          />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            cols="30"
-            rows="10"
-            required
-          ></textarea>
+        <form ref={form} onSubmit={sendEmail} noValidate>
+          <div className="form-group">
+            <input
+              type="text"
+              name="name"
+              placeholder={errors.name || "Your Full Name"}
+              className={errors.name ? "error" : ""}
+              onChange={handleInputChange}
+              onBlur={handleBlur}
+            />
+          </div>
+
+          <div className="form-group">
+            <input
+              type="email"
+              name="email"
+              placeholder={errors.email || "Your Email Address"}
+              className={errors.email ? "error" : ""}
+              onChange={handleInputChange}
+              onBlur={handleBlur}
+            />
+          </div>
+
+          <div className="form-group">
+            <textarea
+              name="message"
+              placeholder={errors.message || "Your Message"}
+              cols="30"
+              rows="10"
+              className={errors.message ? "error" : ""}
+              onChange={handleInputChange}
+              onBlur={handleBlur}
+            ></textarea>
+          </div>
+
           <button type="submit" className="send-btn" disabled={loading}>
             {loading ? (
               <>
