@@ -1,59 +1,155 @@
-import React from 'react'
-import "./contact.css"
-import {CiMail} from "react-icons/ci"
-import {FaFacebookMessenger} from "react-icons/fa"
-import {TbBrandWhatsapp} from "react-icons/tb"
-import {BsFillSendFill} from "react-icons/bs";
-import { useRef } from 'react';
-import emailjs from 'emailjs-com'
+import React from "react";
+import "./contact.css";
+import { CiMail } from "react-icons/ci";
+import { FaFacebookMessenger, FaLinkedin } from "react-icons/fa";
+import { TbBrandWhatsapp } from "react-icons/tb";
+import { BsFillSendFill } from "react-icons/bs";
+import { useRef, useState } from "react";
+import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Contact = () => {
   const form = useRef();
+  const [loading, setLoading] = useState(false);
+
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true);
 
-    emailjs.sendForm('service_3j7vl7h', 'template_29vcnxx', form.current, 'Wgf1T4hd0N8KPj6eG')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_3j7vl7h",
+        "template_29vcnxx",
+        form.current,
+        "Wgf1T4hd0N8KPj6eG"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+          toast.success(
+            "Message sent successfully! I will get back to you soon.",
+            {
+              position: "top-right",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+            }
+          );
+          e.target.reset();
+          setLoading(false);
+        },
+        (error) => {
           console.log(error.text);
-      });
-      e.target.reset();
+          toast.error("Failed to send message. Please try again later.", {
+            position: "top-right",
+            autoClose: 5000,
+          });
+          setLoading(false);
+        }
+      );
   };
+
   return (
-    <section id= "contact"> 
+    <section id="contact">
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
 
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
-            <CiMail className='contact__option-icon'/>
+            <CiMail className="contact__option-icon" />
             <h4>Email</h4>
             <h5>awiral1234@gmail.com</h5>
-            <a href="mailto:awiral1234@gmail.com" target="_blank">Send a Mail</a>
+            <a
+              href="mailto:awiral1234@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Send a Mail
+            </a>
           </article>
           <article className="contact__option">
-            <FaFacebookMessenger className="contact__option-icon"/>
+            <FaFacebookMessenger className="contact__option-icon" />
             <h4>Messenger</h4>
             <h5>Awiral Chand</h5>
-            <a href="https://m.me/awiral.chand.9" target="_blank">Send a Message</a>
+            <a
+              href="https://m.me/awiral.chand.9"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Send a Message
+            </a>
           </article>
           <article className="contact__option">
-            <TbBrandWhatsapp className="contact__option-icon"/>
+            <TbBrandWhatsapp className="contact__option-icon" />
             <h4>WhatsApp</h4>
             <h5>9865767053</h5>
-            <a href="https://api.whatsapp.com/send?phone=+9779865767053" target="_blank">Send a WhatsApp</a>
+            <a
+              href="https://api.whatsapp.com/send?phone=+9779865767053"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Send a WhatsApp
+            </a>
+          </article>
+          <article className="contact__option">
+            <FaLinkedin className="contact__option-icon" />
+            <h4>LinkedIn</h4>
+            <h5>Awiral Chand</h5>
+            <a
+              href="https://www.linkedin.com/in/awiral-chand"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Connect on LinkedIn
+            </a>
           </article>
         </div>
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name='name' placeholder='Your Full Name' required />
-          <input type="text" name="email" placeholder='Your Mail' required />
-          <textarea name="message" placeholder='Your Message' cols="30" rows="10" required></textarea>
-          <button type='submit' className='btn btn-primary'>Send Message <br /><BsFillSendFill/></button>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Full Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email Address"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+          <button
+            type="submit"
+            className="btn btn-primary send-btn"
+            disabled={loading}
+          >
+            {loading ? (
+              <>
+                <span className="spinner"></span>
+                Sending...
+              </>
+            ) : (
+              <>
+                Send Message
+                <BsFillSendFill className="send-icon" />
+              </>
+            )}
+          </button>
         </form>
       </div>
-      </section>
-  )
-}
+      <ToastContainer theme="dark" />
+    </section>
+  );
+};
 
-export default Contact
+export default Contact;
