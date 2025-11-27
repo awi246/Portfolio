@@ -136,6 +136,18 @@ const Contact = () => {
             </a>
           </article>
           <article className="contact__option">
+            <FaLinkedin className="contact__option-icon" />
+            <h4>LinkedIn</h4>
+            <h5>Awiral Chand</h5>
+            <a
+              href="https://www.linkedin.com/in/awiral-chand"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Connect on LinkedIn
+            </a>
+          </article>
+          <article className="contact__option">
             <FaFacebookMessenger className="contact__option-icon" />
             <h4>Messenger</h4>
             <h5>Awiral Chand</h5>
@@ -157,18 +169,6 @@ const Contact = () => {
               rel="noreferrer"
             >
               Send a WhatsApp
-            </a>
-          </article>
-          <article className="contact__option">
-            <FaLinkedin className="contact__option-icon" />
-            <h4>LinkedIn</h4>
-            <h5>Awiral Chand</h5>
-            <a
-              href="https://www.linkedin.com/in/awiral-chand"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Connect on LinkedIn
             </a>
           </article>
         </div>
