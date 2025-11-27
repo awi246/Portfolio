@@ -150,9 +150,9 @@ const Contact = () => {
           <article className="contact__option">
             <TbBrandWhatsapp className="contact__option-icon" />
             <h4>WhatsApp</h4>
-            <h5>9865767053</h5>
+            <h5>+61 422 559107</h5>
             <a
-              href="https://api.whatsapp.com/send?phone=+9779865767053"
+              href="https://api.whatsapp.com/send?phone=61422559107"
               target="_blank"
               rel="noreferrer"
             >
