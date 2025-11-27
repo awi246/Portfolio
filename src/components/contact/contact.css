@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   min-height: 180px;
 }
 
@@ -160,48 +160,31 @@ textarea::placeholder {
 }
 
 .send-btn {
+  font-family: inherit;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: linear-gradient(to bottom, #4dc7d9 0%, #66a6ff 100%);
+  color: white;
+  padding: 1em 1.5em;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.8rem;
-  padding: 1.2rem 2rem;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 1rem;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.4s ease;
-  box-shadow: 0 5px 20px rgba(77, 181, 255, 0.3);
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  cursor: pointer;
   width: 100%;
-}
-
-.send-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
-  transition: left 0.5s ease;
-}
-
-.send-btn:hover::before {
-  left: 100%;
 }
 
 .send-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(77, 181, 255, 0.4);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
 .send-btn:active {
-  transform: translateY(-1px);
+  transform: scale(0.95);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .send-btn:disabled {
@@ -210,22 +193,53 @@ textarea::placeholder {
   transform: none;
 }
 
-.send-icon {
-  font-size: 1.2rem;
-  transition: transform 0.3s ease;
+.send-btn span {
+  display: block;
+  margin-left: 0.5em;
+  transition: all 0.3s;
 }
 
-.send-btn:hover .send-icon {
-  transform: translateX(5px);
+.svg-wrapper-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 0.5em;
+  transition: all 0.3s;
+}
+
+.send-btn:hover .svg-wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.send-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+  transition: all 0.3s;
+}
+
+.send-btn:hover svg {
+  transform: rotate(45deg);
 }
 
 .spinner {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-top-color: white;
   border-radius: 50%;
   animation: spin 0.6s linear infinite;
+  margin-right: 0.5em;
 }
 
 @keyframes spin {
@@ -261,7 +275,7 @@ textarea::placeholder {
   }
 
   .send-btn {
-    padding: 1rem 1.5rem;
-    font-size: 0.9rem;
+    padding: 0.8em 1.2em;
+    font-size: 1rem;
   }
 }

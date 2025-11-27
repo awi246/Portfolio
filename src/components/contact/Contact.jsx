@@ -3,7 +3,6 @@ import "./contact.css";
 import { CiMail } from "react-icons/ci";
 import { FaFacebookMessenger, FaLinkedin } from "react-icons/fa";
 import { TbBrandWhatsapp } from "react-icons/tb";
-import { BsFillSendFill } from "react-icons/bs";
 import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
@@ -128,20 +127,31 @@ const Contact = () => {
             rows="10"
             required
           ></textarea>
-          <button
-            type="submit"
-            className="btn btn-primary send-btn"
-            disabled={loading}
-          >
+          <button type="submit" className="send-btn" disabled={loading}>
             {loading ? (
               <>
                 <span className="spinner"></span>
-                Sending...
+                <span>Sending...</span>
               </>
             ) : (
               <>
-                Send Message
-                <BsFillSendFill className="send-icon" />
+                <div className="svg-wrapper-1">
+                  <div className="svg-wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path
+                        fill="currentColor"
+                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <span>Send Message</span>
               </>
             )}
           </button>
