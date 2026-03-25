@@ -25,6 +25,7 @@ import IMG25 from "../../assets/img25.png";
 import IMG26 from "../../assets/img26.png";
 import IMG27 from "../../assets/img27.png";
 import IMG28 from "../../assets/img28.png";
+import IMG29 from "../../assets/img29.webp";
 
 const Portfolio = () => {
   return (
@@ -32,7 +33,32 @@ const Portfolio = () => {
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
       <div className="container portfolio__container">
-      <article className="portfolio__item">
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG29} className="portfolio__item-image" alt="" />
+          </div>
+
+          <h3>Agent Manager</h3>
+          <div className="portfolio__item-cta">
+            <a
+              href="https://agentmanager.com.au/"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Demo
+            </a>
+            <a
+              href="https://agentmanager.com.au/"
+              className="btn btn-primary"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Real World
+            </a>
+          </div>
+        </article>{" "}
+        <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG26} className="portfolio__item-image" alt="" />
           </div>
@@ -47,12 +73,17 @@ const Portfolio = () => {
             >
               Live Demo
             </a>
-            <a href="https://www.ugcakes.com/" className="btn btn-primary" rel="noreferrer" target="_blank">
-            Real World
+            <a
+              href="https://www.ugcakes.com/"
+              className="btn btn-primary"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Real World
             </a>
           </div>
         </article>
-      <article className="portfolio__item">
+        <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG12} className="portfolio__item-image" alt="" />
           </div>
@@ -69,7 +100,6 @@ const Portfolio = () => {
             </a>
           </div>
         </article>
-    
         <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG27} className="portfolio__item-image" alt="" />
@@ -87,8 +117,6 @@ const Portfolio = () => {
             </a>
           </div>
         </article>
-
-        
         <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG18} className="portfolio__item-image" alt="" />
@@ -117,7 +145,6 @@ const Portfolio = () => {
             </a>
           </div>
         </article>
-
         <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG11} className="portfolio__item-image" alt="" />
@@ -151,7 +178,6 @@ const Portfolio = () => {
             </a>
           </div>
         </article>
-                
         <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG24} className="portfolio__item-image" alt="" />
@@ -291,7 +317,6 @@ const Portfolio = () => {
             </a>
           </div>
         </article>
-
         <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG2} className="portfolio__item-image" alt="" />
