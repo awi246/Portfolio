@@ -85,6 +85,17 @@ const Portfolio = () => {
         </article>
         <article className="portfolio__item">
           <div className="portfolio__item-image">
+            <img src={IMG18} className="portfolio__item-image" alt="" />
+          </div>
+          <h3>Students Forum</h3>
+          <div className="portfolio__item-cta">
+            <a href="#contact" className="btn btn-primary" rel="noreferrer">
+              Contact For Source Code
+            </a>
+          </div>
+        </article>
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
             <img src={IMG12} className="portfolio__item-image" alt="" />
           </div>
 
@@ -114,17 +125,6 @@ const Portfolio = () => {
               rel="noreferrer"
             >
               Live Demo
-            </a>
-          </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={IMG18} className="portfolio__item-image" alt="" />
-          </div>
-          <h3>Students Forum</h3>
-          <div className="portfolio__item-cta">
-            <a href="#contact" className="btn btn-primary" rel="noreferrer">
-              Contact For Source Code
             </a>
           </div>
         </article>
